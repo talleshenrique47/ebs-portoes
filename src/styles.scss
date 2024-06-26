@@ -5,3 +5,14 @@
     --medium-grey: #343639;
     --dark-grey: #2C2D2A;
 }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
