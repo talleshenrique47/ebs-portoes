@@ -1,9 +1,13 @@
 header {
     display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    width: 100vw;
     min-width: 100vw;
     background: var(--medium-grey);
     box-shadow: 0px 3px 10px #000000;
@@ -11,10 +15,6 @@ header {
   
 header .nav-bar {
     width: 100%;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 10;
     display: flex;
     justify-content: space-around;
     align-items: center;
