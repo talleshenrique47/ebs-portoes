@@ -9,6 +9,9 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { WhyEbsComponent } from './components/why-ebs/why-ebs.component';
 import { ModelsEbsComponent } from './components/models-ebs/models-ebs.component';
+import { AboutComponent } from './components/pages/about/about.component';
+import { ContactComponent } from './components/pages/contact/contact.component';
+import { ProductsComponent } from './components/pages/products/products.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { ModelsEbsComponent } from './components/models-ebs/models-ebs.component
     HomeComponent,
     WelcomeComponent,
     WhyEbsComponent,
-    ModelsEbsComponent
+    ModelsEbsComponent,
+    AboutComponent,
+    ContactComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
