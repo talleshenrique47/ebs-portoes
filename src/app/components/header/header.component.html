@@ -25,11 +25,14 @@
     </div>
     <div class="mobile-menu-icon">
       <button (click)="toggleMenu()" #menuButton>
-        <img class="icon" src="assets/images/svg/menu_white.svg" alt="botão para abrir o menu"
-          [ngClass]="{ open: isMenuOpen }" />
+        <img
+          class="icon"
+          src="assets/images/svg/menu_white.svg"
+          alt="botão para abrir o menu"
+          [ngClass]="{ open: isMenuOpen }"
+        />
       </button>
     </div>
-
   </nav>
   <div class="mobile-menu" [ngClass]="{ open: isMenuOpen }" #menu>
     <ul>

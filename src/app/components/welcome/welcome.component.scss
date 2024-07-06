@@ -2,136 +2,135 @@ $welcome-image-path: "/assets/images/svg/welcome-image.svg";
 $welcome-filter-path: "/assets/images/svg/welcome-filter.svg";
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 100vw;
-    height: 47rem;
-    background-image: url(#{$welcome-image-path});
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: 47rem;
+  background-image: url(#{$welcome-image-path});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .filter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    background-image: url(#{$welcome-filter-path});
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-image: url(#{$welcome-filter-path});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
 }
 
 .overlay {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 3rem;
-    width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 3rem;
+  width: 70%;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    color: var(--white);
-    text-align: center;
-    max-width: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: var(--white);
+  text-align: center;
+  max-width: 45rem;
 }
 
 h1 {
-    font-size: 3rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
-    text-align: start;
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  text-align: start;
 }
 
 h2 {
-    font-size: 4rem;
-    font-weight: 700;
-    margin-bottom: 3rem;
-    text-align: start;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: start;
 }
 
 p {
-    font-size: 2rem;
-    font-weight: 700;
-    margin-bottom: 3rem;
-    text-align: start;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: start;
 }
 
 .btn {
-    background-color: var(--dark-grey);
-    color: var(--white);
-    padding: 1.2rem 1.4px;
-    border: none;
-    cursor: pointer;
-    width: 270px;
-    height: 81;
-    font-size: 2rem;
-    font-weight: 700;
-    border-radius: 10px;
+  background-color: var(--dark-grey);
+  color: var(--white);
+  padding: 1.2rem 1.4px;
+  border: none;
+  cursor: pointer;
+  width: 270px;
+  height: 81;
+  font-size: 2rem;
+  font-weight: 700;
+  border-radius: 10px;
 }
 
 .btn:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
 @media (max-width: 1680px) {
+  .content {
+    max-width: 34rem;
+  }
 
-    .content {
-        max-width: 34rem;
-    }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
 
-    h1 {
-        font-size: 2rem;
-        margin-bottom: .5rem;
-    }
+  h2 {
+    font-size: 3rem;
+  }
 
-    h2 {
-        font-size: 3rem;
-    }
+  p {
+    font-size: 1.5rem;
+  }
 
-    p {
-        font-size: 1.5rem;
-    }
-
-    .btn {
-        font-size: 1.5rem;
-    }
+  .btn {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 580px) {
-    .container {
-        height: 32rem;
-    }
-    .overlay {
-        width: 100%;
-    }
+  .container {
+    height: 32rem;
+  }
+  .overlay {
+    width: 100%;
+  }
 
-    .content {
-        max-width: 23rem;
-    }
+  .content {
+    max-width: 23rem;
+  }
 
-    h1 {
-        font-size: 1.5rem;
-        margin-bottom: .5rem;
-    }
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
 
-    h2 {
-        font-size: 1.8rem;
-    }
+  h2 {
+    font-size: 1.8rem;
+  }
 
-    p {
-        font-size: 1rem;
-    }
+  p {
+    font-size: 1rem;
+  }
 
-    .btn {
-        font-size: 1.5rem;
-    }
+  .btn {
+    font-size: 1.5rem;
+  }
 }
