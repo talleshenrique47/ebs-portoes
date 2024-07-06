@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   padding: 2rem 0;
   background-color: var(--background-color);
   text-align: center;
@@ -25,13 +25,13 @@ h1 {
 
 .content {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
 .features {
-  width: 49%;
+  width: 100%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -57,22 +57,104 @@ h1 {
   display: flex;
   text-align: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .feature-item p {
   text-align: left;
-  font-size: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
   margin: 0;
 }
 
 .feature-item .icon {
   display: flex;
+  margin-bottom: 1rem;
 }
 
 .feature-item .icon img {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
+  width: 50px;
+}
+
+.whatsapp-contact {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.whatsapp-contact img {
+  width: 50px;
+  margin-right: 1rem;
+}
+
+.botao-wpp {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+
+.botao-wpp:hover {
+  background-color: darken(#25d366, 5%);
+}
+
+.botao-wpp:focus {
+  background-color: darken(#25d366, 15%);
+}
+
+.location-feature {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.location-item {
+  background-color: var(--light-grey);
+  color: var(--white);
+  padding: 1.5rem;
+  border-radius: 30px 0 30px 30px;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.location-feature h2 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.location-feature p {
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.location-feature .icon {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.location-feature .icon img {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 50px;
 }
 
 @media (max-width: 1640px) {
