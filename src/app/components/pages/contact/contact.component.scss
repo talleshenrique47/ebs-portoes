@@ -65,6 +65,7 @@ h1 {
   text-align: center;
   font-size: 1.2rem;
   margin: 0;
+  padding-bottom: 1rem;
 }
 
 .feature-item .icon {
@@ -173,9 +174,19 @@ h1 {
   .features {
     width: 100%;
   }
+
+  .feature-item p {
+    padding-bottom: 0.5rem;
+  }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 970px) {
+  .feature-item p {
+    padding-bottom: 0rem;
+  }
+}
+
+@media (max-width: 660px) {
   .content {
     flex-wrap: nowrap;
     flex-direction: column;
@@ -183,5 +194,9 @@ h1 {
 
   .feature-item {
     width: 100%;
+  }
+
+  .feature-item p {
+    padding-bottom: 0.5rem;
   }
 }

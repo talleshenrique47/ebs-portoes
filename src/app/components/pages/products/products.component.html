@@ -2,7 +2,7 @@
   <h1>Catálogo</h1>
   <p>
     A EBS Portões oferece diversos modelos de portões para sua escolha. Também
-    fabricamos portões personalizados conforme seu projeto.
+    fabricamos portões personalizados conforme seu projeto e realizamos manutenção especializada.
   </p>
   <p>
     Selecione o modelo de sua preferência, anote o código correspondente e
@@ -19,45 +19,9 @@
   </div>
   <h2>Nossos Modelos</h2>
   <div class="model-grid">
-    <div class="model-item">
-      <img src="assets/images/svg/portao-image.svg" alt="EBS 01" />
-      <p>EBS 01</p>
-    </div>
-    <div class="model-item">
-      <img src="assets/images/svg/portao-image.svg" alt="EBS 02" />
-      <p>EBS 02</p>
-    </div>
-    <div class="model-item">
-      <img src="assets/images/svg/portao-image.svg" alt="EBS 03" />
-      <p>EBS 03</p>
-    </div>
-    <div class="model-item">
-      <img src="assets/images/svg/portao-image.svg" alt="EBS 04" />
-      <p>EBS 04</p>
-    </div>
-    <div class="model-item">
-      <img src="assets/images/svg/portao-image.svg" alt="EBS 04" />
-      <p>EBS 05</p>
-    </div>
-    <div class="model-item">
-      <img src="assets/images/svg/portao-image.svg" alt="EBS 04" />
-      <p>EBS 06</p>
-    </div>
-    <div class="model-item">
-      <img src="assets/images/svg/portao-image.svg" alt="EBS 04" />
-      <p>EBS 07</p>
-    </div>
-    <div class="model-item">
-      <img src="assets/images/svg/portao-image.svg" alt="EBS 04" />
-      <p>EBS 08</p>
-    </div>
-    <div class="model-item">
-      <img src="assets/images/svg/portao-image.svg" alt="EBS 04" />
-      <p>EBS 09</p>
-    </div>
-    <div class="model-item">
-      <img src="assets/images/svg/portao-image.svg" alt="EBS 04" />
-      <p>EBS 10</p>
-    </div>
+    <div class="model-item" *ngFor="let model of models">
+      <img [src]="model.imageUrl" alt="{{model.name}}" (click)="openImageModal(model.imageUrl)" />
+      <p>{{ model.name }}</p>
+    </div>   
   </div>
 </div>

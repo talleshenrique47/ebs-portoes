@@ -1,0 +1,10 @@
+<div class="modal-background" (click)="onClose()">
+    <div class="modal-container" (click)="$event.stopPropagation()">
+        <div class="model-box">
+            <img [src]="data.imageUrl" alt="Selected Image" class="modal-image" />
+            <button mat-button class="close-button" (click)="onClose()">
+                <mat-icon>close</mat-icon>
+            </button>
+        </div>
+    </div>
+</div>

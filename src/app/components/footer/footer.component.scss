@@ -70,6 +70,16 @@ footer {
   margin-right: 1rem;
 }
 
+@media (max-width: 1260px) {
+  .foot-logo {
+    margin-right: 2.5rem;
+  }
+  .foot-about {
+    max-width: 22rem;
+    margin-right: 2.5rem;
+  }
+}
+
 @media (max-width: 920px) {
   footer {
     padding: 3rem 1rem;
@@ -90,5 +100,6 @@ footer {
   .foot-about {
     margin-bottom: 3rem;
     margin-right: 0;
+    max-width: 36rem;
   }
 }
