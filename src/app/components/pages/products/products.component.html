@@ -24,19 +24,4 @@
       <p>{{ model.name }}</p>
     </div>   
   </div>
-  <div class="whatsapp-contact">
-    <a
-      href="https://wa.me/5511958034830?text=Olá,+EBS+Portões,%0A%0AGostaria+de+solicitar+um+orçamento+para+um+portão.+Aguardo+seu+retorno.%0A%0A(Qual+foi+seu+modelo+de+preferência?+nos+envie+o+código+correspondente)+"
-      class="botao-wpp"
-    >
-      <img src="assets/images/png/whatsapp-icon.png" alt="" />
-      whatsapp
-    </a>
-  </div>
-  <div class="model-grid">
-    <div class="model-item" *ngFor="let model of models">
-      <img [src]="model.imageUrl" alt="{{model.name}}" (click)="openImageModal(model.imageUrl)" />
-      <p>{{ model.name }}</p>
-    </div>   
-  </div>
 </div>
