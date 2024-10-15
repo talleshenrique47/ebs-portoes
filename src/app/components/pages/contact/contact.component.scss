@@ -141,7 +141,7 @@ h1 {
 }
 
 .location-feature p {
-  text-align: left;
+  text-align: center;
   font-size: 1.2rem;
   font-weight: 400;
   margin: 0;
@@ -192,11 +192,15 @@ h1 {
     flex-direction: column;
   }
 
+  .feature-item .icon {
+    margin-bottom: 0.2rem;
+  }
+
   .feature-item {
     width: 100%;
   }
 
   .feature-item p {
-    padding-bottom: 0.5rem;
+    padding-bottom: 0;
   }
 }
