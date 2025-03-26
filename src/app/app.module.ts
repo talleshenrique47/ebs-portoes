@@ -17,6 +17,7 @@ import { ContactComponent } from './components/pages/contact/contact.component';
 import { ProductsComponent } from './components/pages/products/products.component';
 import { ImageModalComponent } from './components/image-modal/image-modal.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { FloatButtonComponent } from './components/float-button/float-button.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     AboutComponent,
     ContactComponent,
     ProductsComponent,
-    ImageModalComponent
+    ImageModalComponent,
+    FloatButtonComponent
   ],
   imports: [
     BrowserModule,
